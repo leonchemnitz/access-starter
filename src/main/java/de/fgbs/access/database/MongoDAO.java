@@ -9,6 +9,10 @@ import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.primefaces.json.JSONObject;
 
+// @LC: Usually there exists a DAO for every database entity and not for the whole database but I
+// assume this class exists just for testing purposes.
+// I recommend creating DAOs like UserDAO, or InvitationDAO that enable access to user or invitation
+// entities respectively.
 public class MongoDAO {
 
   // @LC: I recommend naming the Logger variable eigther "log" or "LOG". Since you need one of these
