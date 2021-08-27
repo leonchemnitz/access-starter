@@ -14,9 +14,9 @@ import org.primefaces.json.JSONObject;
 // I recommend creating DAOs like UserDAO, or InvitationDAO that enable access to user or invitation
 // entities respectively.
 public class MongoDAO {
-
   // @LC: I recommend naming the Logger variable eigther "log" or "LOG". Since you need one of these
   // in every class, long variable names become cumbersome after a while.
+  // Also please ALWAYS use the Logger and LoggerFactory imported from slf4j!!!
   private static final Logger logger = LogManager.getLogger(MongoDAO.class);
 
   // @LC: This is business logic and should never be placed in a DataAccessObject (DAO)! Please move

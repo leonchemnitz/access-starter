@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 @Component("helloWorld")
 public class HelloWorld {
-
   private static final Logger log = LoggerFactory.getLogger(HelloWorld.class);
 
   private String firstName = "";
